@@ -60,7 +60,7 @@ export default function Home(props) {
             <table>
               <thead>
                 <tr>
-                  <th>URL</th>
+                  <th>WEB SİTESİ</th>
                   <th>DURUM</th>
                 </tr>
               </thead>
