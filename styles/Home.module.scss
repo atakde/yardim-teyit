@@ -1,15 +1,16 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  padding-top: 2rem;
+  padding-top: 20px;
 }
 
 .search-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1rem;
+  margin: 0 20px;
 
   & > div {
     display: flex;
