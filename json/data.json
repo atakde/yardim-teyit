@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "url": "http://www.afetbilgi.com",
+            "status": "SECURE"
+        },
+        {
+            "id": "2",
+            "url": "https://deprem.io",
+            "status": "SECURE"
+        },
+        {
+            "id": "3",
+            "url": "https://afetcozum.com/?fbclid=PAAabkFMq7oD5sCj6j39SF0zgINNhEXdBpRBuwDLfE4rgQsShTHJgRhS-4Hng",
+            "status": "SECURE"
+        },
+        {
+            "id": "4",
+            "url": "https://afetdestek.com/index.asp?s=00&h=1D42383BEDBE3E7A5AF05377B9C9D218D771A9C5",
+            "status": "SECURE"
+        },
+        {
+            "id": "5",
+            "url": "https://afetharita.com",
+            "status": "SECURE"
+        },
+        {
+            "id": "6",
+            "url": "https://twitter.com/ahbap",
+            "status": "SECURE"
+        },
+        {
+            "id": "7",
+            "url": "https://www.google.com/maps/d/u/1/viewer?mid=1aQ0TJi4q_46XAZiSLggkbTjPzLGkTzQ&ll=37.06301742072887%2C37.28739713964324&z=9",
+            "status": "SECURE"
+        },
+        {
+            "id": "8",
+            "url": "https://web.itu.edu.tr/sariero/dinleme.html?fbclid=PAAabbvVvqgKsFHaaPV8b1RjzuerCq1hwvEubQkyvzFjt8T71AleGIwpflHrs",
+            "status": "SECURE"
+        },
+        {
+            "id": "9",
+            "url": "https://misafirol.org/?fbclid=PAAabqZsyepBcJ0WaBhEn8erCckSG9Bo5alcRIQvxMH8dh_nnrA6RtuCReeMs",
+            "status": "SECURE"
+        },
+        {
+            "id": "10",
+            "url": "https://twitter.com/ihtiyacharitasi",
+            "status": "SECURE"
+        },
+        {
+            "id": "11",
+            "url": "https://twitter.com/AFADBaskanlik",
+            "status": "SECURE"
+        },
+        {
+            "id": "12",
+            "url": "https://www.otelz.com/tr/gecmisolsunturkiyem",
+            "status": "SECURE"
+        },
+        {
+            "id": "13",
+            "url": "https://afaddestek.com",
+            "status": "FRAUD"
+        },
+        {
+            "id": "14",
+            "url": "http://depremdestek.com",
+            "status": "FRAUD"
+        }
+    ]
+}

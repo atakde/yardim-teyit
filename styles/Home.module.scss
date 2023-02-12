@@ -1,0 +1,87 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 16px;
+  color: #000000;
+}
+
+.search-container button {
+  width: 100%;
+  max-width: 100px;
+  height: 48px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 16px;
+  color: #000000;
+  background: #d8d8d8;
+  cursor: pointer;
+}
+
+.status {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: #d8d8d8;
+  color: #000000;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1248px;
+}
+.table-container table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container table thead tr th {
+  padding: 0.5rem;
+  text-align: left;
+  height: 48px;
+  width: 1200px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #000000
+}
+
+.table-container thead {
+  background: #FCFCFC;
+}
+
+.table-container tr {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.table-container table tbody tr td {
+  height: 48px;
+  width: 1200px;
+  padding: 0.5rem;
+}
