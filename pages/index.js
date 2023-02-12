@@ -25,6 +25,10 @@ export default function Home(props) {
     }
   }, []);
 
+  const handleReportFraud = () => {
+    console.log('report fraud');
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -34,8 +38,13 @@ export default function Home(props) {
 
       <main>
         <div className={styles['search-container']}>
-          <input type='text' id='#search' placeholder='Search...' />
-          <button>Search</button>
+          <div>
+            <input type='text' id='#search' placeholder='Search...' />
+            <button className={styles['search-btn']}>Search</button>
+          </div>
+          <div>
+            <button className={styles['report-fraud-btn']} onClick={handleReportFraud}>Report a fraud</button>
+          </div>
         </div>
         <div className={styles['table-container']}>
           <table>

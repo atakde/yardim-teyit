@@ -10,15 +10,19 @@
 
 .search-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+
+  & > div {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 .search-container input {
   width: 100%;
-  max-width: 300px;
+  min-width: 500px;
   height: 48px;
   border: 1px solid #eaeaea;
   border-radius: 10px;
@@ -27,7 +31,7 @@
   color: #000000;
 }
 
-.search-container button {
+.search-btn {
   width: 100%;
   max-width: 100px;
   height: 48px;
@@ -37,6 +41,17 @@
   font-size: 16px;
   color: #000000;
   background: #d8d8d8;
+  cursor: pointer;
+}
+
+.report-fraud-btn {
+  height: 48px;
+  background: black;
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 16px;
   cursor: pointer;
 }
 
