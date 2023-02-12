@@ -22,7 +22,7 @@
   min-width: 500px;
   height: 48px;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 0 1rem;
   font-size: 16px;
   color: #000000;
@@ -33,22 +33,22 @@
   max-width: 100px;
   height: 48px;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 0 1rem;
-  font-size: 16px;
+  font-size: 14px;
   color: #000000;
-  background: #d8d8d8;
+  background: #fff;
   cursor: pointer;
 }
 
 .report-fraud-btn {
   height: 48px;
-  background: black;
-  border: 1px solid black;
+  background: red;
+  border: 1px solid red;
   color: white;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 0 1rem;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -71,8 +71,12 @@
 }
 
 .table thead {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   border-radius: 8px 8px 0px 0px;
+}
+
+.table th {
+  color: #9ca3af;
 }
 
 .table head > tr {
