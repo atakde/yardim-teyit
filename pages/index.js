@@ -30,44 +30,49 @@ export default function Home(props) {
   };
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Yardım Teyit</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <header>
+        <h1 className='title'>YARDIMTEYIT</h1>
+        <p className='description'>Yardım Teyit, yardım çağrılarına yönelik sahte siteleri tespit etmek ve bunları kamuoyuna duyurmak için kurulmuştur.</p>
+      </header>
 
-      <main>
-        <div className={styles['search-container']}>
-          <div>
-            <input type='text' id='#search' placeholder='Search...' />
-            <button className={styles['search-btn']}>Search</button>
+      <div className={styles.container}>
+        <Head>
+          <title>Yardım Teyit</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <main>
+          <div className={styles['search-container']}>
+            <div>
+              <input type='text' id='#search' placeholder='Search...' />
+              <button className={styles['search-btn']}>Search</button>
+            </div>
+            <div>
+              <button className={styles['report-fraud-btn']} onClick={handleReportFraud}>Report a fraud</button>
+            </div>
           </div>
-          <div>
-            <button className={styles['report-fraud-btn']} onClick={handleReportFraud}>Report a fraud</button>
-          </div>
-        </div>
-        <div className={styles['table-container']}>
-          <table>
-            <thead>
-              <tr>
-                <th>URL</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tableData.map((item, index) => (
-                <tr key={index} className={item.status === 'FRAUD' ? 'fraud' : ''}>
-                  <td><a href={item.status === "FRAUD" ? "#" : item.url} target='_blank'>{item.url}</a></td>
-                  <td><span className={item.status === 'FRAUD' ? styles.status + ' fraud' : styles.status + ' secure' }>{item.status}</span></td>
+          <div className={styles['table-container']}>
+            <table>
+              <thead>
+                <tr>
+                  <th>URL</th>
+                  <th>Status</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </main>
-      <footer>
-      </footer>
-      <style jsx>{`
+              </thead>
+              <tbody>
+                {tableData.map((item, index) => (
+                  <tr key={index} className={item.status === 'FRAUD' ? 'fraud' : ''}>
+                    <td><a href={item.status === "FRAUD" ? "#" : item.url} target='_blank'>{item.url}</a></td>
+                    <td><span className={item.status === 'FRAUD' ? styles.status + ' fraud' : styles.status + ' secure'}>{item.status}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </main>
+        <footer>
+        </footer>
+        <style jsx>{`
         .fraud {
           color: red;
         }
@@ -75,7 +80,8 @@ export default function Home(props) {
           color: green;
         }
       `}</style>
-    </div>
+      </div>
+    </>
   )
 }
 

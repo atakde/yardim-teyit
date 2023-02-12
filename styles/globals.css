@@ -36,3 +36,23 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+header {
+  background-color: #2463eb;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.description {
+  color: #fff;
+  font-size: 14px;
+}
