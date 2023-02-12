@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { debounce } from '../helpers/utils';
 
 const trList = {
-  SECURE: 'GUVENLI',
+  SECURE: 'GÜVENLİ',
   FRAUD: 'SAHTE'
 };
 
