@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss';
 import fsPromises from 'fs/promises';
 import path from 'path'
 import { useEffect, useState } from 'react';
+import { debounce } from '../helpers/utils';
 
 export default function Home(props) {
   const { data } = props;
@@ -12,16 +13,6 @@ export default function Home(props) {
     const value = e.target.value;
     const result = data.filter(item => item.url.includes(value));
     setTableData(result);
-  };
-
-  const debounce = (func, delay) => {
-    let inDebounce;
-    return function () {
-      const context = this;
-      const args = arguments;
-      clearTimeout(inDebounce);
-      inDebounce = setTimeout(() => func.apply(context, args), delay);
-    }
   };
 
   const handleSearchDebounce = debounce(handleSearch, 500);
