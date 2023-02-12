@@ -5,6 +5,11 @@ import path from 'path'
 import { useEffect, useState } from 'react';
 import { debounce } from '../helpers/utils';
 
+const trList = {
+  SECURE: 'GUVENLI',
+  FRAUD: 'SAHTE'
+};
+
 export default function Home(props) {
   const { data } = props;
   const [tableData, setTableData] = useState(data);
@@ -44,11 +49,11 @@ export default function Home(props) {
         <main>
           <div className={styles['search-container']}>
             <div>
-              <input type='text' id='#search' placeholder='Search...' />
-              <button className={styles['search-btn']}>Search</button>
+              <input type='text' id='#search' placeholder='Ara...' />
+              <button className={styles['search-btn']}>ARA</button>
             </div>
             <div>
-              <button className={styles['report-fraud-btn']} onClick={handleReportFraud}>Report a fraud</button>
+              <button className={styles['report-fraud-btn']} onClick={handleReportFraud}>SAHTE SİTE BİLDİR</button>
             </div>
           </div>
           <div className={styles['table-container']}>
@@ -56,14 +61,14 @@ export default function Home(props) {
               <thead>
                 <tr>
                   <th>URL</th>
-                  <th>Status</th>
+                  <th>DURUM</th>
                 </tr>
               </thead>
               <tbody>
                 {tableData.map((item, index) => (
                   <tr key={index} className={item.status === 'FRAUD' ? 'fraud' : ''}>
                     <td><a href={item.status === "FRAUD" ? "#" : item.url} target='_blank'>{item.url}</a></td>
-                    <td><span className={item.status === 'FRAUD' ? styles.status + ' fraud' : styles.status + ' secure'}>{item.status}</span></td>
+                    <td><span className={item.status === 'FRAUD' ? styles.status + ' fraud' : styles.status + ' secure'}>{trList[item.status]}</span></td>
                   </tr>
                 ))}
               </tbody>
