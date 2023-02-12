@@ -57,7 +57,7 @@ export default function Home(props) {
             </div>
           </div>
           <div className={styles['table-container']}>
-            <table>
+            <table className={styles['table']}>
               <thead>
                 <tr>
                   <th>WEB SİTESİ</th>
